@@ -2,14 +2,14 @@
 %define upstream_version 0.003
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	6
 
 Summary:	Specify dependencies on external non-Perl things
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Email/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/Email-Verify-SMTP
+Source0:	https://cpan.metacpan.org/authors/id/J/JO/JOHND/Email-Verify-SMTP-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
