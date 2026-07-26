@@ -1,15 +1,13 @@
 %define upstream_name    Email-Verify-SMTP
-%define upstream_version 0.003
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	0.003
+Release:	7
 
 Summary:	Specify dependencies on external non-Perl things
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Email-Verify-SMTP
-Source0:	https://cpan.metacpan.org/authors/id/J/JO/JOHND/Email-Verify-SMTP-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/J/JO/JOHND/Email-Verify-SMTP-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -30,7 +28,7 @@ To put that another way:
     them.*
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
